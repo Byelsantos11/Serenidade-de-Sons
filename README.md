@@ -1,67 +1,144 @@
-Aqui está uma sugestão completa e profissional de README.md para o seu projeto. Você pode copiar e colar diretamente no seu GitHub ou GitLab!
+# 🎧 Serenidade em Sons
 
-🎧 Serenidade em Sons
-Serenidade em Sons é um aplicativo Android focado em bem-estar e relaxamento. Ele oferece uma coleção de sons contínuos (ruídos brancos, sons da natureza, melodias suaves) projetados para ajudar os usuários a dormir melhor, focar nos estudos ou meditar.
+**Serenidade em Sons** é um aplicativo Android focado em **bem-estar, relaxamento e produtividade**, oferecendo uma coleção de sons contínuos como ruídos brancos, sons da natureza e melodias suaves.
 
-O projeto foi inteiramente desenvolvido utilizando Kotlin e Jetpack Compose, seguindo os padrões de design modernos do Android.
+O objetivo é ajudar o usuário a:
 
-✨ Funcionalidades
-Categorias Focadas: Separação de áudios por intenção de uso (Dormir, Estudar, Meditar).
+* Dormir melhor 😴
+* Focar nos estudos 📚
+* Meditar 🧘
 
-Player de Áudio Integrado: Reprodução de áudio em loop infinito utilizando o MediaPlayer nativo do Android.
+O projeto foi desenvolvido utilizando **Kotlin + Jetpack Compose**, seguindo práticas modernas do desenvolvimento Android.
 
-Controles Simples: Botões interativos de Play/Pause dinâmicos, que reagem ao estado atual da música.
+## ✨ Funcionalidades
 
-Listas Expansíveis (Accordion): Interface limpa e organizada com categorias de som que se expandem com animações suaves (AnimatedVisibility).
+### 🎯 Categorias Focadas
 
-Temporizador (Sleep Timer): Capacidade de programar o desligamento automático do áudio (ex: pausar após 30 minutos), ideal para pegar no sono.
+Organização dos sons por intenção de uso:
 
-Suporte a Tema Claro/Escuro: Adaptação automática da paleta de cores (MaterialTheme) com base nas configurações do sistema do usuário.
+* Dormir
+* Estudar
+* Meditar
 
-🛠️ Tecnologias e Bibliotecas Utilizadas
-Linguagem: Kotlin
+### 🔊 Player de Áudio Integrado
 
-UI Toolkit: Jetpack Compose
+* Reprodução contínua (loop infinito)
+* Utilização do `MediaPlayer` nativo do Android
 
-Design System: Material Design 3 (MD3)
+### ⏯️ Controles Simples
 
-Navegação: Jetpack Navigation Compose
+* Botões dinâmicos de Play/Pause
+* Feedback visual baseado no estado do áudio
 
-Áudio: android.media.MediaPlayer (Nativo)
+### 📂 Listas Expansíveis (Accordion)
 
-Assincronismo & Timer: Kotlin Coroutines (rememberCoroutineScope, launch, delay)
+* Interface limpa e organizada
+* Uso de `AnimatedVisibility` para animações suaves
 
-Gerenciamento de Estado: State/MutableState nativos do Compose (remember, mutableStateOf)
+### ⏳ Sleep Timer
 
-📱 Estrutura do App
-Tela Inicial (HomeScreen): Apresenta as boas-vindas ao usuário e opções de rotas (Dormir, Estudar, Meditar).
+* Permite programar o desligamento automático
+* Ideal para uso antes de dormir
 
-Tela de Sons (DormirScreen, etc): Lista agrupada dos sons disponíveis. Contém o controle de Play/Pause por som e ativação do Timer.
+### 🌗 Tema Claro/Escuro
 
-Barra de Navegação Inferior: Facilita o acesso rápido às abas principais do app.
+* Adaptação automática ao sistema do usuário
+* Implementado com `MaterialTheme (Material 3)`
 
-🚀 Como Executar o Projeto
-Faça o clone deste repositório:
+## 🛠️ Tecnologias e Ferramentas
 
-Bash
+* **Linguagem:** Kotlin
+* **UI Toolkit:** Jetpack Compose
+* **Design System:** Material Design 3 (MD3)
+* **Navegação:** Navigation Compose
+* **Áudio:** `android.media.MediaPlayer`
+* **Assincronismo:** Kotlin Coroutines
+* **Gerenciamento de Estado:** `remember`, `mutableStateOf`
+
+## 📱 Estrutura do App
+
+### 🏠 HomeScreen
+
+Tela inicial com:
+
+* Boas-vindas
+* Navegação para categorias
+
+### 🎧 Sound Screens
+
+(Telas como `DormirScreen`, `EstudarScreen`, etc)
+
+* Lista de sons organizados
+* Controle individual de reprodução
+* Ativação do Timer
+
+### 🔽 Bottom Navigation
+
+* Navegação rápida entre as principais seções do app
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clone o repositório
+
+```bash
 git clone https://github.com/SEU_USUARIO/SerenidadeEmSons.git
-Abra o projeto no Android Studio.
 
-Atenção aos Áudios: Por questões de direitos autorais/tamanho de arquivo, os áudios .mp3 não estão versionados. Para testar o app, você deve adicionar seus próprios arquivos de áudio:
+### 2. Abra no Android Studio
 
-Crie a pasta res/raw (se não existir).
+* File → Open → selecione o projeto
 
-Adicione arquivos de áudio (ex: robitz_holf.mp3, chuva_leve.mp3) seguindo estritamente o padrão de letras minúsculas e underline.
+### ⚠️ Importante: Arquivos de Áudio
 
-Sincronize o projeto com o Gradle.
+Por questões de tamanho e direitos autorais, os arquivos `.mp3` não estão no repositório.
 
-Execute o aplicativo em um emulador ou dispositivo físico (Android 6.0+).
+Para rodar o app:
+2. Adicione seus áudios:
+   
+chuva_leve.mp3
+som_floresta.mp3
+ruido_branco.mp3
 
-🔮 Próximos Passos (Backlog)
-[ ] Implementar uma aba de Configurações reais (Settings).
+📌 Regras:
 
-[ ] Adicionar suporte a reprodução de áudio em segundo plano (Background Service / MediaSession) para que a música não pare ao bloquear a tela.
+* Apenas letras minúsculas
+* Sem espaços
+* Use `_` (underline)
 
-[ ] Criar um "Dialog" (caixa flutuante) para o usuário escolher o tempo exato do Timer (15, 30, 45, 60 minutos).
+### 3. Execute o App
 
-Desenvolvido com 💙 e Jetpack Compose.
+* Emulador ou dispositivo físico
+* Android 6.0+
+  
+## 🔮 Próximos Passos (Backlog)
+
+* [ ] Tela de Configurações completa
+* [ ] Reprodução em segundo plano (Background Service / MediaSession)
+* [ ] Escolha personalizada do Timer (Dialog: 15, 30, 45, 60 min)
+* [ ] Favoritar sons ❤️
+* [ ] Mix de sons (ex: chuva + vento)
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto demonstra habilidades em:
+
+* Desenvolvimento Android moderno
+* UI declarativa com Compose
+* Gerenciamento de estado
+* Manipulação de mídia
+* Experiência do usuário (UX/UI)
+  
+## 👨‍💻 Autor
+**Gabryel Rodrigues**
+
+## ⭐ Contribuições
+Sinta-se à vontade para:
+
+* Abrir issues
+* Sugerir melhorias
+* Contribuir com o projeto
+
+## 💙 Agradecimento
+
+Desenvolvido com dedicação utilizando **Kotlin + Jetpack Compose**
